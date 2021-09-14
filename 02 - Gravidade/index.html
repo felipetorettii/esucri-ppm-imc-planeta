@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule seu peso em outro planeta</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <form class="form-style-7">
+        <ul>
+            <li>
+                <label>Planeta:</label> <br>
+                <select name="planeta" id="planeta">
+                    <option value="1">Mercúrio</option>
+                    <option value="2">Vênus</option>
+                    <option value="3">Marte</option>
+                    <option value="4">Júpiter</option>
+                    <option value="5">Saturno</option>
+                    <option value="6">Urano</option>
+                </select>
+                <span>Selecione o planeta</span>
+            </li>
+            <li>
+                <label for="name">Peso</label>
+                <input type="text" name="peso" id="peso">
+                <span>Preencha com o seu peso</span>
+            </li>
+            <li>
+                <div style="text-align: center">
+                    <input type="button" value="Calcular" onclick="calcular()">
+                    <input type="button" value="Limpar campos" onclick="limpa()">
+                    <p name="pesoplaneta" id="pesoplaneta"></p>
+                </div>
+            </li>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
